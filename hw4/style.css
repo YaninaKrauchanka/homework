@@ -1,0 +1,15 @@
+div {
+    background: url('top_rightcorner.png') right top no-repeat, 
+    url('bottom_rightcorner.png') right bottom no-repeat, 
+    url('bottom_leftcorner.png') left bottom no-repeat,
+    url('top_leftcorner.png') left top no-repeat,
+    url('left_long.png') left center repeat-y,
+    url('bottom_long.png') bottom center  repeat-x, 
+    url('right_long.png') right center repeat-y,
+    url('top_long.png') top center repeat-x;
+    padding: 50px; 
+    }
+
+  p {
+  text-align: center;
+    }
