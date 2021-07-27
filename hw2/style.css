@@ -1,0 +1,25 @@
+.title {
+  text-align: center;
+  font-size: 3em;
+  font-style: oblique;
+}
+
+.car, .train, .paint {
+  display: inline-block; 
+  vertical-align: top;
+  height: 100px;
+  width: 30%
+}
+
+.text {
+  display: table;
+  white-space: pre-line;
+}
+
+.text_tr {
+  font-weight:bold;
+}
+
+.text_pt {
+  font-style:italic;
+}
