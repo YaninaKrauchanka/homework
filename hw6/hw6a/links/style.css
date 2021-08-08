@@ -1,0 +1,83 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.menu li {
+    display: inline-block;
+    border-right-style: solid;
+    border-color: red;
+    padding: 10px;
+}
+
+.menu> li:not(:first-child){
+    border-right-width: 3px;
+}
+
+.menu a,.table a {
+    color: green;
+}
+
+.menu a:hover, .table a:hover,.float a:hover {
+    color: red;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    animation-name: table;
+    animation-duration: 3s;
+}
+
+@keyframes table {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+        }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+ }
+
+.table li {
+    display: table-cell;
+    text-align: center;
+    padding: 10px;
+    border-right: 3px solid red;
+}
+
+.float {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; 
+    animation-name: float;
+    animation-duration: 3s;
+}
+
+@keyframes float {
+    from {
+        opacity: 0;
+        transform: translateX(1000px);
+       }
+       to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.float li { 
+    display: inline-block;
+    text-align: center; 
+}
+.float li::before {
+    content: '\007C';
+    padding: 10px;
+    color: red;
+}
+
+.float a {
+    color: green;
+    float: left;
+}

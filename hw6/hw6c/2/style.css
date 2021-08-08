@@ -1,0 +1,42 @@
+.chess {
+margin: 20px;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+h1,p,a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: bold;
+}
+
+div>a[href^="http://"]:not([href*="chessgames.ru/mixail-botvinnik/"]):before,
+a[href^="http://"]:not([href*="chessgames.ru/chempiony-mira-po-shaxmatam-anatolij-evgenevich-karpov/"]):before,
+a[href^="http://"]:not([href*="chessgames.ru/kasparov-garri-kimovich/"]):before{
+  content: " "url('extref.png');
+}
+
+h1+p {
+  color: green;
+  font-size: 1em;
+}
+
+p:nth-of-type(2) {
+  color: red;
+  font-size: 1em;
+  }
+
+div>p:last-of-type {
+  color: blue;
+  font-size: 1em;
+  font-style: italic;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ 

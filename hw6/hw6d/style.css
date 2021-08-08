@@ -1,0 +1,33 @@
+  .star {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    flex-direction: row-reverse;
+  }
+
+  .star input {
+    display: none;
+  }
+ 
+  .star > label {
+    position: relative;
+    width: 2.5em;
+    font-size: 12vw;
+    color: lightcoral;
+  }
+  
+  .star > label:before {
+    content: '\2606';
+    position: absolute;
+  }
+
+  .star > label:hover::before,
+  .star > label:hover ~ label::before {
+    content:'\2605';
+    position: absolute;
+  }
+
+
+
+
+  
